@@ -1,0 +1,136 @@
+\documentclass[a4paper]{article}
+
+% Import some useful packages
+\usepackage[margin=0.5in]{geometry} % narrow margins
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\definecolor{LightGray}{gray}{0.95}
+
+\title{Peer-review of assignment 4 for \textit{INF3331-alexaes}}
+\author{Reviewer 1, UiO-username: laurahol, {laura.holewa@sfe.uio.no} \\}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\subsection{Goal}
+The review should provide feedback on the solution to the student. The main goal is to \emph{give constructive feedback and advice} on how to improve the solution. You, the peer-review team, can decide how you organise the peer-review work between you. 
+
+\subsection{Guidelines}\label{sec:general_review}
+For each (coding) exercise, one should review the following points:
+
+\begin{itemize}
+  \item Is the code \textbf{working as expected}? For non-internal functions (in particular for scripts that are run from the command-line), does the program handle invalid inputs sensibly?
+  \item Is the code \textbf{well documented}? Are there docstrings and are the useful?
+  \item Is the code written in \textbf{Pythonic way} \footnote{https://www.python.org/dev/peps/pep-0020/}? Is the code easy to read? Are the variable/class/function names sensible? Do you find overuse of classes or not sufficient use of functions or classes? Are there parts of the program that are hard to understand? 
+  \item Can you find \textbf{unnecessarily complicated parts} of the program? If so, suggest an improved implementation.
+  \item List the programming parts that are not answered.
+\end{itemize}
+Use (shortened) code snippets where appropriate to show how to improve the solution. 
+
+\subsection{Points}
+The review is completed by pushing the review Latex source file (.tex files) and the PDF files to each of the reviewed repositories. The name of the files should be \emph{feedback.tex} and \emph{feedback.pdf} in the students assignemnt4 directory.
+
+You will get up to 10 points for delivering the peer-reviews. Each of you should contribute to the review roughly equivalently - your team will get the same number of points\footnote{In case a team-member does not contribute, please email \href{mailto:simon@simula.no}{simon@simula.no}}. 
+
+
+
+\section{Review \emph{- to be filled out}}\label{sec:review}
+
+Specify the system (Python version, operating system, ...) that was used for the review.
+\bigskip
+
+This reveiw was done with Python version 3.5.2. The operating system was Linux Ubuntu.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{General feedback}
+Use this section to give general feedback about the solution such as advice for improved programming or documentation style.
+\bigskip
+
+In general, the code was well written and functioned as expected. It would be beneficial to add more comments in the future and to ensure that all parts of assignment sections are answered.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Assignment 4.1}
+Add a review based on section \ref{sec:general_review}. Do the tests have a meaningful name?
+\bigskip
+
+The tests do have meaningful names. The tests worked as expected. There were no docstrings, but it is not clear that any were needed as the test names and print statements made it obvious what the code was doing. The code was written in a Pythonic way and was not not unnecessarily complicated. It appears that there is no test of integrating 2*x from 0 to 1 numerically, with a verification that the error is about 1/N. That part appears to be missing.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Assignment 4.2} \label{sec:assignment5.2}
+Add a review based on section \ref{sec:general_review}.
+\bigskip
+
+The names are meaningful. The functions work as expected. There were no docstrings, but it is not clear that any were needed as the variable names and print statements made it obvious what the code was doing. The code was written in a Pythonic way and was not not unnecessarily complicated. It would be helpful if the axes of the quadratic error plot were labeled and there was a plot title. I don't think that the error is plotted as a function of N because the y-values do not decrease as the x-values increase.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Assignment 4.3}
+Add a review based on section \ref{sec:general_review}. In addition, review the following assignment specific items: 
+\begin{itemize}
+  \item Is numpy being used effectively (e.i. vectorization where possible)?
+  \bigskip
+  
+  Numpy was used effectively. Vectorization was done when possible.
+\end{itemize}
+\bigskip
+
+The names are meaningful. The functions work as expected. There were no docstrings, but it is not clear that any were needed as the variable names made it obvious what the code was doing. The code was written in a Pythonic way and was not not unnecessarily complicated. Assignment 4.3 says to add "tests" to the test file, but only one test of the numpy integrator was added. Adding more tests would be beneficial. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Assignment 4.4}
+Add a review based on section \ref{sec:general_review}.
+
+\bigskip
+
+The names are meaningful. Numba did not decrease the ammount of time to perform the integration, but I don't know whether numba should necessarily decrease the ammount of time to perform the integration in this particular case. There were no docstrings, but it is not clear that any were needed as the variable names made it obvious what the code was doing. The code was written in a Pythonic way and was not not unnecessarily complicated. The question of how much speed was gained when switching to numba was not answered. Also, the question of whether there were advantages to using numba over numpy was not answered.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Assignment 4.5}
+Add a review based on section \ref{sec:general_review}. If you are reviewing a INF3331 student, you can skip this review.
+\bigskip
+
+This section was not done.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Assignment 4.6}
+Add a review based on section \ref{sec:general_review}.
+\bigskip
+
+The names are meaningful.The functions work as expected. There were some comments and the variable names made it obvious what the code was doing. The code was written in a Pythonic way and was not not unnecessarily complicated. The question of finding the required N to get within 10 to the -10th power of the actual answer was not answered.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Assignment 4.7}
+Add a review based on section \ref{sec:general_review}.
+\bigskip
+
+It appears that the package was set up correctly.
+\subsection*{Assignment 4.8}
+Add a review based on section \ref{sec:general_review}.
+\bigskip
+
+The names are meaningful.The functions appear to work as expected. The variable names made it obvious what the code was doing. The code was written in a Pythonic way and was not not unnecessarily complicated. I am not sure what the actual answers are for the integrals  of the weird functions, but the processes used in this case seemed to be correct.
+
+
+
+\subsection{Useful Latex snippets}
+Here are some sample usage of Latex.
+
+\subsubsection{Sample code}
+\begin{minted}[bgcolor=LightGray, linenos, fontsize=\footnotesize]{python}
+import sys
+print "This is a sample code"
+sys.exit(0)
+\end{minted}
+
+\subsubsection{Mathematical equation}
+\begin{align}
+2 \pi > 6
+\end{align}
+
+
+
+\bibliographystyle{plain}
+\bibliography{literature}
+
+\end{document}
