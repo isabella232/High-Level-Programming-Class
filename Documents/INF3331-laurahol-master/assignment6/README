@@ -1,0 +1,3 @@
+-The user must specify a valid value in every field and hit submit to change the plots.
+
+-It is assumed that the user will choose a lower and upper threshold of Carbon emissions that will lead to a relevant number of countries that is small enough that all country codes can be seen on the x-axis of the CO2 Emissions by Country plot.

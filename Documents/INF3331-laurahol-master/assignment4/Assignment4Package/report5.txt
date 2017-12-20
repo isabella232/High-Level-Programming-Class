@@ -1,0 +1,1 @@
+When I applied Cython to the integrate function, x^2 was numerically integrated over 0 to 1 with N=100k in about 0.010 seconds. This is an improvement over the plain integrate function, which took about 0.023 seconds to do the same thing. This is an increase in compuation speed by a factor of about 2.3.

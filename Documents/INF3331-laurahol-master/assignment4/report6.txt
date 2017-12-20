@@ -1,0 +1,9 @@
+iterations required with integrate (pure python) 42
+iterations required with numpy_integrate 42
+iterations required with numba_integrate 42
+iterations required with cython_integrate 42
+
+iterations required with midpoint_integrate (pure python) 83
+iterations required with numpy_midpoint_integrate 83
+iterations required with numba_midpoint_integrate 83
+iterations required with cython_midpoint_integrate 83

@@ -1,0 +1,95 @@
+<html>
+<header><title>Assignment 6</title></header>
+<body>
+<a href="/static/temperature_CO2_plotter.html"><button>Get Help Modifying Plots</button></a>
+<center><img src="/static/mytempfig.png?f={{var}}" width=600 height=500></center>
+<center><img src="/static/myCO2fig.png?f={{var}}" width=600 height=500></center>
+<center><img src="/static/myCO2bycountryfig.png?f={{var}}" width=600 height=500></center>
+<style>
+  #changes {
+    position: absolute;
+    top: 100px;
+  }
+</style>
+<form id="changes" action="handle_changes" method="POST">
+  Temperature Month Name:<br>
+  <input type="radio" name="month" value="January" >January
+  <br>
+  <input type="radio" name="month" value="February">February
+  <br>
+  <input type="radio" name="month" value="March" >March
+  <br>
+  <input type="radio" name="month" value="April">April
+  <br>
+  <input type="radio" name="month" value="May" >May
+  <br>
+  <input type="radio" name="month" value="June">June
+  <br>
+  <input type="radio" name="month" value="July" >July
+  <br>
+  <input type="radio" name="month" value="August">August
+  <br>
+  <input type="radio" name="month" value="September" >September
+  <br>
+  <input type="radio" name="month" value="October">October
+  <br>
+  <input type="radio" name="month" value="November" >November
+  <br>
+  <input type="radio" name="month" value="December">December
+  <br>
+  <br>
+  <br>
+  Temperature Starting Year:<br>
+  <input type="text" name="t_starting_year">
+
+  <br>
+  Temperature Ending Year:<br>
+  <input type="text" name="t_ending_year">
+
+  <br>
+  Temperature Y-axis Min.:<br>
+  <input type="text" name="t_y_min">
+
+  <br>
+  Temperature Y-axis Max:<br>
+  <input type="text" name="t_y_max">
+  <br>
+  <br>
+  <br>
+  CO2 Emissions Starting Year:<br>
+  <input type="text" name="c_starting_year">
+
+  <br>
+  CO2 Emissions Ending Year:<br>
+  <input type="text" name="c_ending_year">
+
+  <br>
+  CO2 Emissions Y-axis Min.:<br>
+  <input type="text" name="c_y_min">
+
+  <br>
+  CO2 Emissions Y-axis Max:<br>
+  <input type="text" name="c_y_max">
+  <br>
+  <br>
+  <br>
+  <br>
+  CO2 Emissions by Country Lower Threshold<br>
+  <input type="text" name="lower_t">
+  <br>
+
+  <br>
+  CO2 Emissions by Country Upper Threshold<br>
+  <input type="text" name="upper_t">
+  <br>
+
+  <br>
+  CO2 Emissions by Country Year<br>
+  <input type="text" name="yr">
+  <input type="submit" value="Submit">
+  <br>
+</form>
+</body>
+</html>    
+
+

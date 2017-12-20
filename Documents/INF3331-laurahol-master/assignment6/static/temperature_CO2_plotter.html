@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module temperature_CO2_plotter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>temperature_CO2_plotter</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/i-am-me/Documents/temperature_CO2_plotter.py">/home/i-am-me/Documents/temperature_CO2_plotter.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-plot_CO2"><strong>plot_CO2</strong></a>(time_begin, time_end, y_min, y_max)</dt><dd><tt>This&nbsp;function&nbsp;plots&nbsp;Gloabl&nbsp;CO2&nbsp;emissions&nbsp;vs.&nbsp;time.&nbsp;The&nbsp;arguments&nbsp;time_begin&nbsp;and&nbsp;time_end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;represent&nbsp;the&nbsp;beginning&nbsp;and&nbsp;ending&nbsp;years&nbsp;that<br>
+you&nbsp;wish&nbsp;to&nbsp;create&nbsp;the&nbsp;plot&nbsp;for.&nbsp;The&nbsp;minimum&nbsp;and&nbsp;maximum&nbsp;year&nbsp;values&nbsp;are&nbsp;1751&nbsp;and&nbsp;2012<br>
+respectively.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;y_min&nbsp;and&nbsp;y_max&nbsp;represent&nbsp;the&nbsp;minimum&nbsp;and&nbsp;maximum&nbsp;CO2&nbsp;values&nbsp;<br>
+that&nbsp;you&nbsp;wish&nbsp;to&nbsp;create&nbsp;the&nbsp;plot&nbsp;for.&nbsp;The&nbsp;lowest&nbsp;recorded&nbsp;CO2&nbsp;value&nbsp;is&nbsp;3&nbsp;<br>
+Million&nbsp;Metric&nbsp;Tons&nbsp;of&nbsp;Carbon&nbsp;and&nbsp;the&nbsp;highest&nbsp;recorded&nbsp;CO2&nbsp;value&nbsp;is&nbsp;9671&nbsp;<br>
+Million&nbsp;Metric&nbsp;Tons&nbsp;of&nbsp;Carbon.</tt></dd></dl>
+ <dl><dt><a name="-plot_CO2_by_country"><strong>plot_CO2_by_country</strong></a>(lower_threshold, upper_threshold, year)</dt><dd><tt>This&nbsp;function&nbsp;will&nbsp;create&nbsp;a&nbsp;bar&nbsp;chart&nbsp;of&nbsp;CO2&nbsp;emissions&nbsp;for&nbsp;all&nbsp;of&nbsp;the&nbsp;countries&nbsp;that&nbsp;are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;within&nbsp;the&nbsp;lower&nbsp;and&nbsp;upper&nbsp;thresholds&nbsp;specifified&nbsp;by&nbsp;the&nbsp;lower_threshold&nbsp;and&nbsp;upper_threshold<br>
+variables&nbsp;respectively.</tt></dd></dl>
+ <dl><dt><a name="-plot_temperature"><strong>plot_temperature</strong></a>(month, time_begin, time_end, y_min, y_max)</dt><dd><tt>This&nbsp;function&nbsp;plots&nbsp;temperature&nbsp;for&nbsp;a&nbsp;user&nbsp;specified&nbsp;month&nbsp;vs.&nbsp;time.&nbsp;The&nbsp;argument&nbsp;month&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;represents&nbsp;the&nbsp;month&nbsp;that&nbsp;you&nbsp;wish&nbsp;to&nbsp;plot&nbsp;the&nbsp;results&nbsp;for.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;time_begin&nbsp;and&nbsp;time_end&nbsp;represent&nbsp;the&nbsp;beginning&nbsp;and&nbsp;ending&nbsp;years&nbsp;that<br>
+you&nbsp;wish&nbsp;to&nbsp;create&nbsp;the&nbsp;plot&nbsp;for.&nbsp;The&nbsp;minimum&nbsp;and&nbsp;maximum&nbsp;year&nbsp;values&nbsp;are&nbsp;1816&nbsp;and&nbsp;2012<br>
+respectively.<br>
+&nbsp;<br>
+The&nbsp;arguments&nbsp;y_min&nbsp;and&nbsp;y_max&nbsp;represent&nbsp;the&nbsp;minimum&nbsp;and&nbsp;maximum&nbsp;temperature&nbsp;values&nbsp;<br>
+that&nbsp;you&nbsp;wish&nbsp;to&nbsp;create&nbsp;the&nbsp;plot&nbsp;for.&nbsp;The&nbsp;lowest&nbsp;recorded&nbsp;temperature&nbsp;is&nbsp;-5.147&nbsp;°C&nbsp;and<br>
+the&nbsp;highest&nbsp;recorded&nbsp;temperature&nbsp;is&nbsp;22.659&nbsp;°C.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>co2</strong> =      Year  Carbon
+0    1751       3
+1    1752   ...   9508
+261  2012    9671
+
+[262 rows x 2 columns]<br>
+<strong>co2_by_country</strong> =                                           Countr...NaN   NaN          NaN  
+
+[264 rows x 62 columns]<br>
+<strong>temperature</strong> =      Year  January  February  March   April     ...46     5.632    -0.338  
+
+[197 rows x 13 columns]</td></tr></table>
+</body></html>
